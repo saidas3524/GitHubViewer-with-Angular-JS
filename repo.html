@@ -1,0 +1,11 @@
+<div>
+	{{issuecount}}
+	<ul id="contributors">
+		<li ng-repeat="contributor in contributors">
+			{{contributor.login}}
+			<img ng-src="{{contributor.avatar_url}}">
+		</li>
+
+	</ul>
+
+</div>

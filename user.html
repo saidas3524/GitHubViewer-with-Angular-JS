@@ -1,0 +1,28 @@
+
+	<h1>{{userdata.login}}</h1>
+	<img ng-src='{{userdata.avatar_url}}'>
+	OrderBy:
+	<select ng-model = "repoSortOrder">
+		<option value="+name">Name Ascending</option>
+		<option value="+language">Language Ascending</option>
+		<option value="-language">Language Descending</option>
+		<option value="-name">Name Descending</option>
+	</select>
+	<div id="usersrepo">
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Language</th>
+				</tr>
+				<tr ng-repeat="repo in repodata | orderBy:repoSortOrder ">
+					<td>
+					<a href="#/repos/{{username}}/{{repo.name}}">	
+
+					{{repo.name}}</a></td>
+					<td>{{repo.language}}</td>
+				</tr>
+			</thead>
+		</table>
+
+	</div>

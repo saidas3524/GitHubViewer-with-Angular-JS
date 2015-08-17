@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First Angular Application</title>
+   	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="./Scripts/bootstrap.min.js"></script>
+   	<script type="text/javascript" src="./Scripts/angular.min.js"></script>
+    <script type="text/javascript" src="./Scripts/angular-route.min.js"></script>
+    <script type="text/javascript" src="./Scripts/app.js"></script>
+   	<script type="text/javascript" src="./Scripts/MainController.js"></script>
+   	<script type="text/javascript" src="./Scripts/UserController.js"></script>
+   	<script type="text/javascript" src="./Scripts/RepoController.js"></script>
+   	<script type="text/javascript" src="./Scripts/github.js"></script>
+   	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css"/>
+</head>
+<body ng-app="githubviewer">
+	<h1>Github Viewer</h1>
+	<div ng-view></div>
+</body>
+
+    	<!-- <div ng-show="user" id="userdetails">
+			<h1>{{userdata.login}}</h1>
+			<img ng-src='{{userdata.avatar_url}}'>
+			OrderBy:
+			<select ng-model = "repoSortOrder">
+				<option value="+name">Name Ascending</option>
+				<option value="+language">Language Ascending</option>
+				<option value="-language">Language Descending</option>
+				<option value="-name">Name Descending</option>
+			</select>
+			<div id="usersrepo">
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Language</th>
+						</tr>
+						<tr ng-repeat="repo in repodata | orderBy:repoSortOrder ">
+							<td>{{repo.name}}</td>
+							<td>{{repo.language}}</td>
+						</tr>
+					</thead>
+				</table>
+
+			</div>
+		</div> -->
+	
+</html>
